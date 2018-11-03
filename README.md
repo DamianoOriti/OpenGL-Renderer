@@ -6,7 +6,7 @@
 
 This Renderer has been used for [Escape Room videogame project](https://github.com/DamianoOriti/Escape-Room) developed by Damiano Oriti and Sara Battelini.
 
-[Preview]()
+[Preview](https://github.com/DamianoOriti/OpenGL-Renderer/blob/master/preview.png)
 
 ### Features:
 
