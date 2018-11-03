@@ -10,7 +10,11 @@ This Renderer has been used for [Escape Room videogame project](https://github.c
 
 [Video of Escape Room videogame project](https://www.youtube.com/watch?v=IKH6xkf1tJQ)
 
+**Important note**
+
 If you want to and will use this software, it would be greatly appreciated if you could spend three minutes for watching and giving a "Like" to the video linked above, thanks!
+
+This renderer allows the user to create some scenes and to render them on screen. A scene is composed of a collection of billboards, a collection of texts, a collection of shaded 3D models, a collection of shadeless (meaning they have just a texture and do not react to light) 3D models, and finally the lights, one point light and one directional light.
 
 ### Features:
 
@@ -24,6 +28,10 @@ If you want to and will use this software, it would be greatly appreciated if yo
 - Text effects such as drop shadows and glow
 - Billboard rendering with transparency
 - Render to texture technique
+
+### Program
+
+When you launch the program, two windows will appear: one shows the console output while the other shows the rendering of the scene. The rendered scene is composed of one shaded 3D model (a sofa), one billboard showing a dog and four texts showing the different visual effects which can been applied to text.
 
 ## Libraries
 
