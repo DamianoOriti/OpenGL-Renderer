@@ -5,7 +5,6 @@
 ## Description
 
 This Renderer has been used for [Escape Room videogame project](https://github.com/DamianoOriti/Escape-Room) developed by Damiano Oriti and Sara Battelini.
-
 This renderer allows the user to create some scenes and to render them on screen. A scene is composed of a collection of billboards, a collection of texts, a collection of shaded 3D models, a collection of shadeless (meaning they have just a texture and do not react to light) 3D models, and finally the lights, one point light and one directional light.
 
 [Preview of the Renderer](https://github.com/DamianoOriti/OpenGL-Renderer/blob/master/preview.png)
