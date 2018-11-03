@@ -32,6 +32,15 @@ If you want to and will use this software, it would be greatly appreciated if yo
 
 When you launch the program, two windows will appear: one shows the console output while the other shows the rendering of the scene. The rendered scene is composed of one shaded 3D model (a sofa), one billboard showing a dog and four texts showing the different visual effects which can been applied to text.
 
+### Commands:
+
+- 'W' key: move camera forward
+- 'A' key: move camera backward
+- 'S' and 'D' keys: move camera sideways
+- 'R' key: move camera up
+- 'F' key: move camera down
+- Mouse: change looking direction
+
 ## Libraries
 
 - [Assimp](https://github.com/assimp/assimp) for loading 3D model file formats such as fbx
