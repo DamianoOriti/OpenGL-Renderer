@@ -73,12 +73,12 @@ void loadData()
 	pCamera->position_ = Vector3f(0.0f, 0.5f, 0.0f);
 
 
-	// fonts
+	// Create fonts
 	Font* pFont = new Font("../OpenGL_Renderer/data/fonts/candara.fnt");
 	pFonts.push_back(pFont);
 
 
-	// texts
+	// Create texts
 	Text2D* pText2D = new Text2D("Hello world!", Text2D::Alignment::RIGHT, pFont);
 	pText2D->color_ = Color(1.0f, 1.0f, 0.0f);
 	pText2D->scale_ = 1.6f;
@@ -116,14 +116,14 @@ void loadData()
 	scene.add(pText2D);
 
 
-	// billboards
+	// Create billboards
 	Billboard2D* pBillboard2D = new Billboard2D("../OpenGL_Renderer/data/textures/Sneaking-white-dog.png", 0.2f);
 	pBillboard2D->position_ = Vector2f(0.6f, 0.25f);
 	pBillboard2Ds.push_back(pBillboard2D);
 	scene.add(pBillboard2D);
 
 
-	// lights
+	// Create lights
 	GLfloat diffuse[] = { 0.5f,0.5f,0.5f };
 	GLfloat specular[] = { 0.7f,0.7f,0.7f };
 	GLfloat position[] = { 1.0f,1.0f,0.0f };
@@ -136,7 +136,7 @@ void loadData()
 	scene.pDirLight_ = pDirLight;
 
 
-	// models
+	// Create models
 	ShadedModel3D* pShadedModel3D = new ShadedModel3D("../OpenGL_Renderer/data/models/sofa.fbx");
 	pShadedModel3D->position_ = Vector3f(0.0f, 0.0f, 2.0f);
 	pShadedModel3Ds.push_back(pShadedModel3D);
@@ -208,8 +208,7 @@ void idle()
 
 void display()
 {
-	Renderer& renderer = Renderer::getInstance();
-	renderer.renderScene(0);
+	Renderer::getInstance().renderScene(0);
 
 	glutSwapBuffers();
 }
@@ -321,7 +320,7 @@ int main(int argc, char** argv)
 
 		if (runFullscreen)
 		{
-			glutCreateWindow("OpenGL Renderer");
+			glutCreateWindow("OpenGL Renderer by Damiano Oriti");
 			glutFullScreen();
 			windowWidth = glutGet(GLUT_WINDOW_WIDTH);
 			windowHeight = glutGet(GLUT_WINDOW_HEIGHT);
@@ -335,7 +334,7 @@ int main(int argc, char** argv)
 			windowPosition.y = (glutGet(GLUT_SCREEN_HEIGHT) - windowHeight) / 2;
 			glutInitWindowPosition(windowPosition.x, windowPosition.y);
 			glutInitWindowSize(windowWidth, windowHeight);
-			glutCreateWindow("OpenGL Renderer");
+			glutCreateWindow("OpenGL Renderer by Damiano Oriti");
 		}
 
 		glutKeyboardFunc(keyboard);
