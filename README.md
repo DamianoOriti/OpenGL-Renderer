@@ -24,10 +24,6 @@ This renderer allows the user to create some scenes and to render them on screen
 - Billboard rendering with transparency
 - Render to texture technique
 
-**Important note**
-
-If you want to and will use this software, it would be greatly appreciated if you could spend three minutes for watching and giving a "Like" to the video linked above, thanks!
-
 ## Program
 
 When you launch the program, two windows will appear: one shows the console output while the other shows the rendering of the scene. The rendered scene is composed of one shaded 3D model (a sofa), one billboard showing a dog and four texts showing the different visual effects which can been applied to text.
